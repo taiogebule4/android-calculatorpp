@@ -220,9 +220,9 @@ public class CalculatorEngineImpl implements CalculatorEngine {
 
 	@Override
 	public void setUseGroupingSeparator(boolean useGroupingSeparator) {
-		synchronized (lock) {
-			this.engine.setUseGroupingSeparator(true);
-		}
+	        synchronized (lock) {
+	                this.engine.setUseGroupingSeparator(useGroupingSeparator);
+	        }
 	}
 
 	@Override
